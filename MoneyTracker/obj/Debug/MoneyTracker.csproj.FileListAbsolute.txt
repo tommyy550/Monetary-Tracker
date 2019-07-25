@@ -1,0 +1,10 @@
+C:\Users\tommy\source\repos\MoneyTracker\MoneyTracker\obj\Debug\MoneyTracker.csprojAssemblyReference.cache
+C:\Users\tommy\source\repos\MoneyTracker\MoneyTracker\obj\Debug\MoneyTracker.Form1.resources
+C:\Users\tommy\source\repos\MoneyTracker\MoneyTracker\obj\Debug\MoneyTracker.Properties.Resources.resources
+C:\Users\tommy\source\repos\MoneyTracker\MoneyTracker\obj\Debug\MoneyTracker.csproj.GenerateResource.cache
+C:\Users\tommy\source\repos\MoneyTracker\MoneyTracker\obj\Debug\MoneyTracker.csproj.CoreCompileInputs.cache
+C:\Users\tommy\source\repos\MoneyTracker\MoneyTracker\bin\Debug\MoneyTracker.exe.config
+C:\Users\tommy\source\repos\MoneyTracker\MoneyTracker\bin\Debug\MoneyTracker.exe
+C:\Users\tommy\source\repos\MoneyTracker\MoneyTracker\bin\Debug\MoneyTracker.pdb
+C:\Users\tommy\source\repos\MoneyTracker\MoneyTracker\obj\Debug\MoneyTracker.exe
+C:\Users\tommy\source\repos\MoneyTracker\MoneyTracker\obj\Debug\MoneyTracker.pdb
