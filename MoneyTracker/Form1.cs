@@ -21,28 +21,27 @@ namespace MoneyTracker
         RecordList rList = new RecordList();
         string FileName = "PersistentObject1.bin";
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Record r = new Record("hi", 4.4M);
-            rList.add(r);
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(rList.Count().ToString());
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            POManager.writeToFile(rList, FileName);//write to binary file
-            this.Close();
-        }
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
             POManager.readFromFile(ref rList, FileName);
-
+            dateTimePicker1.Value = DateTime.Now;
         }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            POManager.writeToFile(rList, FileName);//write to binary file
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Record r = new Record(txtItem.Text, Convert.ToDecimal(txtPrice.Text),dateTimePicker1.Value);
+            rList.add(r);
+            dateTimePicker1.Value = DateTime.Now;
+            
+        }
+
+       
     }
 }

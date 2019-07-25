@@ -18,10 +18,16 @@ namespace MoneyTracker.Classes
     {
         string name;
         decimal cost;
-        public Record(string s,decimal c)
+        DateTime time;
+        public Record(string s,decimal c, DateTime t)
         {
             name = s;
             cost = c;
+            time = t;
+        }
+        public string show()
+        {
+            return name + "   " + cost.ToString() + "   " + time.ToString();
         }
     }
 }

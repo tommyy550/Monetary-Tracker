@@ -23,5 +23,14 @@ namespace MoneyTracker.Classes
         {
             return rlist.Count;
         }
+        public string showContent()
+        {
+            string s = "";
+            foreach(Record r in rlist)
+            {
+                s += r.show();
+            }
+            return s;
+        }
     }
 }
