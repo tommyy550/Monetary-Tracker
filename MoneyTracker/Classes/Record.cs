@@ -29,7 +29,7 @@ namespace MoneyTracker.Classes
         }
         public string show()
         {
-            return ID.ToString() + name + "   " + cost.ToString() + "   " + time.ToString()+ "\n";
+            return ID.ToString() + "   " + name + "   " + cost.ToString() + "   " + time.ToString()+ "\n";
         }
     }
 }
