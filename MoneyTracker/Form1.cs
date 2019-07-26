@@ -14,6 +14,7 @@ namespace MoneyTracker
     public partial class Form1 : Form
     {
         
+        
         public Form1()
         {
             InitializeComponent();
@@ -36,12 +37,16 @@ namespace MoneyTracker
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Record r = new Record(txtItem.Text, Convert.ToDecimal(txtPrice.Text),dateTimePicker1.Value);
+            Record r = new Record(rList.getRecordCount(),txtItem.Text, Convert.ToDecimal(txtPrice.Text),dateTimePicker1.Value);
             rList.add(r);
             dateTimePicker1.Value = DateTime.Now;
+            rList.incrementRecordCount();
             
         }
 
-       
+        private void btnShowRecords_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(rList.showContent());
+        }
     }
 }

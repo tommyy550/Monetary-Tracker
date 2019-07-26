@@ -15,6 +15,7 @@ namespace MoneyTracker.Classes
     public class RecordList
     {
         List<Record> rlist = new List<Record>();
+        int recordCount = 1;
         public void add(Record r) //add a person to list 
         {
             rlist.Add(r);
@@ -31,6 +32,14 @@ namespace MoneyTracker.Classes
                 s += r.show();
             }
             return s;
+        }
+        public int getRecordCount()
+        {
+            return recordCount;
+        }
+        public void incrementRecordCount()
+        {
+            recordCount++;
         }
     }
 }

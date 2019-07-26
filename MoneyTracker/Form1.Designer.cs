@@ -34,6 +34,7 @@
             this.txtItem = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnShowRecords = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblItem
@@ -85,11 +86,22 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnShowRecords
+            // 
+            this.btnShowRecords.Location = new System.Drawing.Point(48, 231);
+            this.btnShowRecords.Name = "btnShowRecords";
+            this.btnShowRecords.Size = new System.Drawing.Size(99, 51);
+            this.btnShowRecords.TabIndex = 6;
+            this.btnShowRecords.Text = "Show Records";
+            this.btnShowRecords.UseVisualStyleBackColor = true;
+            this.btnShowRecords.Click += new System.EventHandler(this.btnShowRecords_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 660);
+            this.Controls.Add(this.btnShowRecords);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txtItem);
@@ -113,6 +125,7 @@
         private System.Windows.Forms.TextBox txtItem;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnShowRecords;
     }
 }
 

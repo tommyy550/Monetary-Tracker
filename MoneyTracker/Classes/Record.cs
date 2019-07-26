@@ -16,18 +16,20 @@ namespace MoneyTracker.Classes
     [Serializable()]
     public class Record
     {
+        int ID;
         string name;
         decimal cost;
         DateTime time;
-        public Record(string s,decimal c, DateTime t)
+        public Record(int id,string s,decimal c, DateTime t)
         {
+            ID = id;
             name = s;
             cost = c;
             time = t;
         }
         public string show()
         {
-            return name + "   " + cost.ToString() + "   " + time.ToString();
+            return ID.ToString() + name + "   " + cost.ToString() + "   " + time.ToString()+ "\n";
         }
     }
 }
