@@ -35,6 +35,15 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnShowRecords = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtj = new System.Windows.Forms.Label();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.txtAverage = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtDelete = new System.Windows.Forms.TextBox();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblItem
@@ -96,11 +105,106 @@
             this.btnShowRecords.UseVisualStyleBackColor = true;
             this.btnShowRecords.Click += new System.EventHandler(this.btnShowRecords_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.comboBox1.Location = new System.Drawing.Point(102, 391);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(185, 28);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(319, 386);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(99, 26);
+            this.textBox1.TabIndex = 8;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(445, 386);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 51);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "View Stats";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // txtj
+            // 
+            this.txtj.AutoSize = true;
+            this.txtj.Location = new System.Drawing.Point(326, 99);
+            this.txtj.Name = "txtj";
+            this.txtj.Size = new System.Drawing.Size(44, 20);
+            this.txtj.TabIndex = 10;
+            this.txtj.Text = "Total";
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.Location = new System.Drawing.Point(409, 96);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(74, 26);
+            this.txtTotal.TabIndex = 11;
+            // 
+            // txtAverage
+            // 
+            this.txtAverage.Location = new System.Drawing.Point(409, 147);
+            this.txtAverage.Name = "txtAverage";
+            this.txtAverage.Size = new System.Drawing.Size(74, 26);
+            this.txtAverage.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(326, 147);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 20);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Average";
+            // 
+            // txtDelete
+            // 
+            this.txtDelete.Location = new System.Drawing.Point(404, 271);
+            this.txtDelete.Name = "txtDelete";
+            this.txtDelete.Size = new System.Drawing.Size(56, 26);
+            this.txtDelete.TabIndex = 14;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(492, 272);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(73, 36);
+            this.btnDelete.TabIndex = 15;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 660);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.txtDelete);
+            this.Controls.Add(this.txtAverage);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.txtj);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnShowRecords);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dateTimePicker1);
@@ -126,6 +230,15 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnShowRecords;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label txtj;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.TextBox txtAverage;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtDelete;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 

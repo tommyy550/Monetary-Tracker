@@ -41,5 +41,19 @@ namespace MoneyTracker.Classes
         {
             recordCount++;
         }
+        public decimal total()
+        {
+            decimal d = 0;
+            foreach(Record r in rlist)
+            {
+                d += r.getCost();
+            }
+            return d;
+        }
+        public decimal average()
+        {
+            return total() / rlist.Count;
+        }
+
     }
 }

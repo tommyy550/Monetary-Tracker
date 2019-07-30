@@ -31,5 +31,9 @@ namespace MoneyTracker.Classes
         {
             return ID.ToString() + "   " + name + "   " + cost.ToString() + "   " + time.ToString()+ "\n";
         }
+        public decimal getCost()
+        {
+            return cost;
+        }
     }
 }
