@@ -30,8 +30,17 @@ namespace MoneyTracker
         {
             POManager.readFromFile(ref rList, FileName);
             dateTimePicker1.Value = DateTime.Now;
+            try
+            {
+                txtAverage.Text = rList.average().ToString();
+                
+            }
+            catch
+            {
+                MessageBox.Show("cannot divide by 0");
+            }
             txtTotal.Text = rList.total().ToString();
-            txtAverage.Text = rList.average().ToString();
+
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -47,6 +56,7 @@ namespace MoneyTracker
             rList.incrementRecordCount();
             txtTotal.Text = rList.total().ToString();
             txtAverage.Text = rList.average().ToString();
+            
 
         }
 
@@ -57,11 +67,29 @@ namespace MoneyTracker
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < rList.Count(); i++)
+            try
             {
-
+                rList.deleteRecord(Convert.ToInt32(txtDelete.Text));
+            }
+            catch
+            {
+                MessageBox.Show("Done");
             }
 
+        }
+       
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          
+            String[] arr = new string[12];
+            int counter = 0;
+            foreach (object itemChecked in checkedListBox1.CheckedItems)
+            {
+                arr[counter] = itemChecked.ToString();
+                counter++;
+            }
+            rList.viewRecords(arr, txtYear.Text);
         }
     }
 }

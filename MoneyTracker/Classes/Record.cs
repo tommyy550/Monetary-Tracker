@@ -35,5 +35,17 @@ namespace MoneyTracker.Classes
         {
             return cost;
         }
+        public int getID()
+        {
+            return ID;
+        }
+        public string getMonth()
+        {
+           return time.ToString("MMMM");
+        }
+        public string getYear()
+        {
+            return time.Year.ToString();
+        }
     }
 }

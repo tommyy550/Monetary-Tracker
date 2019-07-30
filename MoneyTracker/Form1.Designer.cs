@@ -36,7 +36,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnShowRecords = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtYear = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtj = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
@@ -44,6 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtDelete = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // lblItem
@@ -126,12 +127,12 @@
             this.comboBox1.Size = new System.Drawing.Size(185, 28);
             this.comboBox1.TabIndex = 7;
             // 
-            // textBox1
+            // txtYear
             // 
-            this.textBox1.Location = new System.Drawing.Point(319, 386);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(99, 26);
-            this.textBox1.TabIndex = 8;
+            this.txtYear.Location = new System.Drawing.Point(763, 450);
+            this.txtYear.Name = "txtYear";
+            this.txtYear.Size = new System.Drawing.Size(99, 26);
+            this.txtYear.TabIndex = 8;
             // 
             // button1
             // 
@@ -141,6 +142,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "View Stats";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtj
             // 
@@ -191,11 +193,33 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.checkedListBox1.Location = new System.Drawing.Point(715, 144);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(173, 277);
+            this.checkedListBox1.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 660);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.txtDelete);
             this.Controls.Add(this.txtAverage);
@@ -203,7 +227,7 @@
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.txtj);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtYear);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnShowRecords);
             this.Controls.Add(this.btnAdd);
@@ -231,14 +255,15 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnShowRecords;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtYear;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label txtj;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.TextBox txtAverage;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtDelete;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Label txtj;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }
 
