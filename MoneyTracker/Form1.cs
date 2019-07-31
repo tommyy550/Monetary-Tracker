@@ -12,11 +12,11 @@ using MoneyTracker.Classes;
 
 namespace MoneyTracker
 {
-    public partial class Form1 : Form
+    public partial class frmMoneyTracker : Form
     {
         
         
-        public Form1()
+        public frmMoneyTracker()
         {
             InitializeComponent();
         }
