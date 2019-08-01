@@ -55,7 +55,7 @@
             // lblItem
             // 
             this.lblItem.AutoSize = true;
-            this.lblItem.Location = new System.Drawing.Point(40, 185);
+            this.lblItem.Location = new System.Drawing.Point(40, 131);
             this.lblItem.Name = "lblItem";
             this.lblItem.Size = new System.Drawing.Size(41, 20);
             this.lblItem.TabIndex = 0;
@@ -64,7 +64,7 @@
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(40, 135);
+            this.lblPrice.Location = new System.Drawing.Point(40, 177);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(44, 20);
             this.lblPrice.TabIndex = 1;
@@ -72,17 +72,17 @@
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(107, 129);
+            this.txtPrice.Location = new System.Drawing.Point(107, 171);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(107, 26);
-            this.txtPrice.TabIndex = 2;
+            this.txtPrice.TabIndex = 3;
             // 
             // txtItem
             // 
-            this.txtItem.Location = new System.Drawing.Point(107, 179);
+            this.txtItem.Location = new System.Drawing.Point(107, 125);
             this.txtItem.Name = "txtItem";
             this.txtItem.Size = new System.Drawing.Size(107, 26);
-            this.txtItem.TabIndex = 3;
+            this.txtItem.TabIndex = 2;
             // 
             // dateTimePicker1
             // 
@@ -105,7 +105,7 @@
             // 
             this.btnShowRecords.Location = new System.Drawing.Point(172, 228);
             this.btnShowRecords.Name = "btnShowRecords";
-            this.btnShowRecords.Size = new System.Drawing.Size(99, 51);
+            this.btnShowRecords.Size = new System.Drawing.Size(136, 51);
             this.btnShowRecords.TabIndex = 6;
             this.btnShowRecords.Text = "Show Records";
             this.btnShowRecords.UseVisualStyleBackColor = true;
@@ -122,7 +122,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(801, 326);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 51);
+            this.button1.Size = new System.Drawing.Size(118, 51);
             this.button1.TabIndex = 9;
             this.button1.Text = "View Stats";
             this.button1.UseVisualStyleBackColor = true;

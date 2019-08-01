@@ -37,7 +37,7 @@ namespace MoneyTracker
             }
             catch
             {
-                MessageBox.Show("cannot divide by 0");
+                MessageBox.Show("No records exist. Cannot divide by 0.");
             }
             txtTotal.Text = rList.total().ToString();
 
@@ -50,8 +50,21 @@ namespace MoneyTracker
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Record r = new Record(rList.getRecordCount(),txtItem.Text, Convert.ToDecimal(txtPrice.Text),dateTimePicker1.Value);
-            rList.add(r);
+            try
+            {
+                Record r = new Record(rList.getRecordCount(), txtItem.Text, Convert.ToDecimal(txtPrice.Text), dateTimePicker1.Value);
+                if (r.getCost() > 100)
+                {
+                    MessageBox.Show("That is quite a large amount of money. You should try to budget more.");
+                }
+                rList.add(r);
+                
+            }
+            catch
+            {
+                MessageBox.Show("Enter a valid price.");
+            }
+            
             dateTimePicker1.Value = DateTime.Now;
             rList.incrementRecordCount();
             txtTotal.Text = rList.total().ToString();
@@ -78,7 +91,7 @@ namespace MoneyTracker
 
         }
        
-
+        //view stat
         private void button1_Click(object sender, EventArgs e)
         {
           
@@ -89,7 +102,14 @@ namespace MoneyTracker
                 arr[counter] = itemChecked.ToString();
                 counter++;
             }
-            rList.viewRecords(arr, txtYear.Text);
+            try
+            {
+                rList.viewRecords(arr, txtYear.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Please check off at least one month and input a year in format XXXX.");
+            }
         }
     }
 }

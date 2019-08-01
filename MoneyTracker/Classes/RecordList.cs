@@ -92,7 +92,14 @@ namespace MoneyTracker.Classes
                     }
                 }
             }
-            MessageBox.Show(content);
+            try
+            {
+                MessageBox.Show(content + "\n" + "Total: " + total.ToString() + " Average: " + (total / counter).ToString());
+            }
+            catch
+            {
+                MessageBox.Show("No records.");
+            }
         }
 
     }
